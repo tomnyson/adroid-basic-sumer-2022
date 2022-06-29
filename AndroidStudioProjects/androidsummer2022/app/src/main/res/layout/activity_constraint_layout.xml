@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android1:id="@+id/linearLayout"
+    android1:layout_width="match_parent"
+    android1:layout_height="match_parent"
+    android1:layout_row="3">
+
+    <EditText
+        android1:id="@+id/edSoNhuNhat"
+        android1:layout_width="397dp"
+        android1:layout_height="45dp"
+        android1:layout_marginTop="15dp"
+        android1:ems="10"
+        android1:hint="số thứ nhất"
+        android1:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android1:id="@+id/edSoThu2"
+        android1:layout_width="398dp"
+        android1:layout_height="42dp"
+        android1:layout_marginTop="10dp"
+        android1:ems="10"
+        android1:hint="số thứ 2"
+        android1:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSoNhuNhat" />
+
+    <Button
+        android1:id="@+id/btnCong"
+        android1:layout_width="100sp"
+        android1:layout_height="49dp"
+        android1:layout_marginStart="50dp"
+        android1:layout_marginTop="20dp"
+        android1:text="Cộng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSoThu2" />
+
+    <Button
+        android1:id="@+id/btnTru"
+        android1:layout_width="100sp"
+        android1:layout_height="48dp"
+        android1:layout_marginTop="20dp"
+        android1:layout_marginEnd="50dp"
+        android1:text="trừ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSoThu2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
