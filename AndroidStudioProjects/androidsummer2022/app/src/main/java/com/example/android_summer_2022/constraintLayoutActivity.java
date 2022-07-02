@@ -46,6 +46,26 @@ public class constraintLayoutActivity extends AppCompatActivity {
                 }
             }
         });
+        btnTru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    int result = Integer.parseInt(edSoThu1.getText().toString()) -
+                            Integer.parseInt(edSoThu2.getText().toString());
+                    // chuyển màn hình
+                    Intent intent = new Intent(getBaseContext(), resultActivity.class);
+                    // gửi kèm dữ liệu
+                    intent.putExtra("ketqua", result);
+                    startActivity(intent);
+
+                    Log.i("Info", "kết quả là: " + result);
+                    Toast.makeText(constraintLayoutActivity.this, "kết quả là: " + result, Toast.LENGTH_SHORT).show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(constraintLayoutActivity.this, "dữ liệu phải là số ", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 }

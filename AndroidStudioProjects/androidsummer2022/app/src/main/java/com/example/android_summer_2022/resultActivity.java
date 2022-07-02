@@ -11,6 +11,14 @@ import android.widget.TextView;
 public class resultActivity extends AppCompatActivity {
     private TextView tvketQua;
     private Button btnBack;
+
+    // kiểm tra chẵn lẻ
+
+    public boolean isChan(int n) {
+        if(n % 2 == 0) return  true;
+        return false;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +29,12 @@ public class resultActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if(intent != null) {
             int  ketqua = intent.getExtras().getInt("ketqua");
+            if(isChan(ketqua)) {
+                tvketQua.setText("Kết quả là: " + ketqua + " là số chẵn");
+            } else {
+                tvketQua.setText("Kết quả là: " + ketqua + " là số lẻ");
+            }
 
-            tvketQua.setText("Kết quả là: " + ketqua);
         }
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
