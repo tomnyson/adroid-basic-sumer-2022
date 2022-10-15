@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_imgSP"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/pro" />
+
+            <TextView
+                android:id="@+id/item_tenSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ten sp" />
+
+            <TextView
+                android:id="@+id/item_giaSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="gia"
+                android:textColor="#3F51B5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_danhmucSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="danh mục" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".filterActivity$ProductActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="quản lý sản phẩm"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#673AB7"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edMaSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="mã sp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edTenSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="tên sản phẩm"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="giá"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/edDes"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:ems="10"
+        android:hint="mô tả"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCapNhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="2dp"
+                android:text="sửa" />
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="2dp"
+                android:text="thêm" />
+
+            <Button
+                android:id="@+id/btnXoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xoá" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gvProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="150dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dp">
+
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gv_item_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gv_product_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/win" />
+
+    <TextView
+        android:id="@+id/gv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Why do we use it"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#020202"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30.000"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#F30000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/gv_product_des"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text" />
+</LinearLayout>

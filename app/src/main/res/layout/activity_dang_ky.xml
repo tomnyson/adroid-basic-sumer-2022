@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context=".ASM.DangKyActivity" >
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:capitalize="sentences"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Đăng ký"
+        android:textAllCaps="true"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dk_wrtxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:boxBackgroundColor="#FFFFFF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dk_txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="tên" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dk_wrtxtTaiKhoan"
+        android:layout_marginLeft="5dp"
+        app:boxBackgroundColor="#FFFFFF"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dk_txtTaiKhoan"
+            android:layout_marginBottom="10dp"
+            android:hint="tài khoản" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        app:boxBackgroundColor="#FFFFFF"
+        android:layout_marginRight="5dp"
+        android:id="@+id/dk_wrtxtMatKhau"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/dk_txtMatKhau"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="mật khẩu"
+            android:password="true"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dk_wrtxtEmail"
+        app:boxBackgroundColor="#FFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dk_txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="email"
+
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Giới tính"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/dk_rdNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/dk_rdNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/dk_wrtxtBirthDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dk_txtBirthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="yyyy/mm/dd"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/dk_btnOpenDatePicker"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/dk_ckDongY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tôi đồng ý" />
+
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/dk_btnDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="đăng ký" />
+
+    <Button
+        android:id="@+id/testEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Email" />
+</LinearLayout>

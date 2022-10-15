@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="@string/dangnhap"
+        android:textColor="#673AB7"
+        android:textSize="34sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dn_txtTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="tài khoản" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dn_txtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mật khẩu" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/ckLuuTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lưu tài khoản" />
+
+    <TextView
+        android:id="@+id/navDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tạo tài khoản"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dn_btnDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/dangnhap" />
+
+</LinearLayout>

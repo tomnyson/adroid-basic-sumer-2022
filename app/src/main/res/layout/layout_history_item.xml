@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutHistoryItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mvketqua"
+        android:layout_width="118dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/hinh1" />
+
+    <TextView
+        android:id="@+id/tvthongbao"
+        android:layout_width="277dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="chúc mừng bạn đoán đúng 3-3"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/mvketqua"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvthoigian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="09/09/20122 12:21"
+        app:layout_constraintStart_toEndOf="@+id/mvketqua"
+        app:layout_constraintTop_toBottomOf="@+id/tvthongbao" />
+
+    <ImageButton
+        android:id="@+id/btnRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvthoigian"
+        app:layout_constraintTop_toBottomOf="@+id/tvthongbao"
+        app:srcCompat="@drawable/ic_baseline_remove_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutControl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlButtonActivity">
+
+    <CheckBox
+        android:id="@+id/ckplayGame"
+        style="@style/style_checkbox"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="chơi game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckCode" />
+
+    <ToggleButton
+        android:id="@+id/tgbtnChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:text="Change Color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKetQuaSoThich" />
+
+    <RadioGroup
+        android:id="@+id/grdNgonNgu"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdJs"
+            style="@style/style_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="JS" />
+
+        <RadioButton
+            android:id="@+id/rdC"
+            style="@style/style_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="C++" />
+
+        <RadioButton
+            android:id="@+id/rdJava"
+            style="@style/style_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Java" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/ckHenho"
+        style="@style/style_checkbox"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="hẹn hò"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckplayGame" />
+
+    <Switch
+        android:id="@+id/swMode"
+        android:layout_width="141dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="129dp"
+        android:text="light mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tgbtnChangeColor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="247dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border_button"
+        android:text="state button"
+        app:layout_constraintStart_toEndOf="@+id/tgbtnChangeColor"
+        app:layout_constraintTop_toBottomOf="@+id/swMode" />
+
+    <CheckBox
+        android:id="@+id/ckCode"
+        style="@style/style_checkbox"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:text="code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <CheckBox
+        android:id="@+id/ckSleep"
+        style="@style/style_checkbox"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="124dp"
+        android:text="ngủ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckplayGame" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="264dp"
+        android:text="Thời gian rảnh bạn làm gì"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKetQuaSoThich"
+        style="@style/style_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/text_kq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckSleep" />
+
+    <CheckBox
+        android:id="@+id/ckPlaySport"
+        style="@style/style_checkbox"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:text="chơi thể thao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckplayGame" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Bạn thích ngôn ngữ gì"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
